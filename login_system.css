@@ -1,0 +1,72 @@
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: block;
+    box-sizing: border-box;
+    
+}
+
+.border-glow {
+    border: 1px solid blue;
+    animation: 4s infinite glow;
+  }
+  @keyframes glow {
+    0% {
+      border-color: red;
+    }
+    25% {
+      border-color: blue;
+    }
+    75% {
+      border-color: rgb(255, 0, 255);
+    }
+    100% {
+      border-color: rgb(0, 255, 221);
+    }
+  }
+  @-webkit-keyframes glow {
+    0% {
+      border-color: red;
+    }
+    25% {
+      border-color: blue;
+    }
+    75% {
+      border-color: rgb(255, 0, 255);
+    }
+    100% {
+      border-color: rgb(0, 204, 255);
+    }
+  }
+
+
+body {
+    background-color: rgb(26, 26, 26);
+}
+
+h1 {
+    text-align: center;
+    font-family: Lato, Roboto, sans-serif;
+    color: whitesmoke;
+    margin-top: 20%;
+}
+
+#user {
+    margin: auto;
+    display: block;
+}
+
+#pass {
+    margin: auto;
+    display: block;
+}
+
+#sub {
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+}
+

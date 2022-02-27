@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Log In</title>
+        <link rel="stylesheet" type="text/css" href="login_system.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <div id='centered'>
+            <div class="border-glow"></div>
+            <h1>Welcome Back. Log In.</h1>
+            <form onsubmit="login(event)">
+                <input autocomplete='off' type='text' name='name' id='user'></input>
+                &nbsp
+                <input type='password' autocomplete='off' id='pass' name='passwords'></input>
+                <input id='sub' type='submit' value='Login'></input>
+            </form>
+        </div>
+    </body>
+    <script type= 'text/javascript'>
+
+    function login(event) {
+        event.preventDefault();
+        var username = event.target['name'].value;
+        var password = event.target['passwords'].value;
+            if (username == 'Mike' && password == 'pass215') {
+                alert('You are now logged in! redirecting... ')
+                window.location.href="login-home.html";
+
+            }
+            else {
+                alert('invalid username/password. Please try again.')
+            }
+    }
+    </script>
+</html>
