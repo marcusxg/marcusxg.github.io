@@ -13,9 +13,9 @@
             <div class="border-glow"></div>
             <h1>Welcome Back. Log In.</h1>
             <form onsubmit="login(event)">
-                <input autocomplete='off' type='text' name='name' id='user'></input>
+                <input placeholder='username is email@email.com' autocomplete='off' type='text' name='name' id='user'></input>
                 &nbsp
-                <input type='password' autocomplete='off' id='pass' name='passwords'></input>
+                <input placeholder: 'password is pass215' type='password' autocomplete='off' id='pass' name='passwords'></input>
                 <input id='sub' type='submit' value='Login'></input>
             </form>
         </div>
@@ -26,7 +26,7 @@
         event.preventDefault();
         var username = event.target['name'].value;
         var password = event.target['passwords'].value;
-            if (username == 'Mike' && password == 'pass215') {
+            if (username == 'email@email.com' && password == 'pass215') {
                 alert('You are now logged in! redirecting... ')
                 window.location.reload()
 
