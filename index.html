@@ -28,11 +28,12 @@
         var password = event.target['passwords'].value;
             if (username == 'Mike' && password == 'pass215') {
                 alert('You are now logged in! redirecting... ')
-                window.location.href="login-home.html";
+                window.location.reload()
 
             }
             else {
                 alert('invalid username/password. Please try again.')
+                window.location.reload()
             }
     }
     </script>
